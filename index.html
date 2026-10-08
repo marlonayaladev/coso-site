@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coso — La isla que le falta a Windows</title>
+<meta name="description" content="Coso es una isla flotante para Windows 10/11: tu música, tu agenda, tus recordatorios, tu correo y tus herramientas, a un clic de distancia. Gratis y 100% local.">
+<meta property="og:title" content="Coso — La isla que le falta a Windows">
+<meta property="og:description" content="Tu día entero en una isla flotante: Spotify, Google Calendar, recordatorios, Gmail e integraciones. Gratis y sin servidores.">
+<meta property="og:image" content="icono-coso.png">
+<meta name="theme-color" content="#0b0e14">
+<meta name="google-site-verification" content="1mi3eoqVZFj4bzdI8zsK3G34kwLjxfPzenFzLfM7Nbo" />
+<link rel="icon" href="icono-coso.png" type="image/png">
+<style>
+  :root{
+    --bg:#0b0e14; --bg2:#0f131b; --card:#141a24; --line:#222b3a;
+    --txt:#e8ecf3; --dim:#98a3b5; --accent:#6aa8ff; --accent2:#8f6bff;
+    --green:#22c55e; --spotify:#1db954; --red:#f4505e;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:radial-gradient(1200px 600px at 50% -200px,#17223a 0%,var(--bg) 55%);
+    color:var(--txt);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    line-height:1.6;-webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  header{position:sticky;top:0;z-index:10;backdrop-filter:blur(14px);background:rgba(11,14,20,.75);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;gap:14px;height:64px}
+  .nav img{width:34px;height:34px;border-radius:9px}
+  .nav .name{font-weight:700;font-size:17px;letter-spacing:.3px}
+  .nav .spacer{flex:1}
+  .nav a.link{color:var(--dim);font-size:14.5px}
+  .nav a.link:hover{color:var(--txt);text-decoration:none}
+  .btn{display:inline-flex;align-items:center;gap:9px;border-radius:11px;padding:12px 22px;font-size:15.5px;font-weight:600;border:1px solid transparent;cursor:pointer;transition:.15s}
+  .btn:hover{text-decoration:none;transform:translateY(-1px)}
+  .btn.primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;box-shadow:0 8px 28px rgba(106,168,255,.28)}
+  .btn.ghost{border-color:var(--line);color:var(--txt);background:rgba(255,255,255,.03)}
+  .btn.sm{padding:9px 16px;font-size:14px}
+  .hero{text-align:center;padding:88px 0 64px}
+  .hero img.logo{width:118px;height:118px;border-radius:30px;box-shadow:0 22px 70px rgba(106,168,255,.28);margin-bottom:26px}
+  .badge{display:inline-block;font-size:13px;color:var(--dim);border:1px solid var(--line);background:rgba(255,255,255,.03);border-radius:999px;padding:5px 14px;margin-bottom:22px}
+  h1{font-size:clamp(34px,5.4vw,58px);line-height:1.12;letter-spacing:-1.5px;font-weight:800}
+  h1 .grad{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero p.sub{max-width:660px;margin:20px auto 34px;color:var(--dim);font-size:18.5px}
+  .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .micro{margin-top:16px;font-size:13px;color:var(--dim)}
+  h2{font-size:clamp(26px,3.6vw,36px);letter-spacing:-.8px;text-align:center;margin-bottom:10px}
+  .lead{text-align:center;color:var(--dim);max-width:640px;margin:0 auto 44px;font-size:17px}
+  section{padding:72px 0}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}
+  .card .ico{font-size:26px;margin-bottom:12px;display:inline-block}
+  .card h3{font-size:17.5px;margin-bottom:7px}
+  .card p{color:var(--dim);font-size:14.8px}
+  .pills{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;max-width:840px;margin:0 auto}
+  .pill{display:inline-flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:9px 16px;font-size:14.5px;font-weight:500}
+  .dot{width:9px;height:9px;border-radius:50%;display:inline-block}
+  .split{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+  @media(max-width:820px){.split{grid-template-columns:1fr}}
+  .panel{background:linear-gradient(160deg,var(--card),#101623);border:1px solid var(--line);border-radius:20px;padding:30px}
+  .panel h3{font-size:20px;margin-bottom:14px}
+  .row{display:flex;gap:12px;align-items:flex-start;padding:11px 0;border-bottom:1px dashed var(--line);font-size:15px;color:var(--dim)}
+  .row:last-child{border-bottom:none}
+  .row b{color:var(--txt);font-weight:600}
+  .check{color:var(--green);font-weight:700;flex-shrink:0}
+  .band{background:linear-gradient(135deg,rgba(106,168,255,.1),rgba(143,107,255,.1));border:1px solid var(--line);border-radius:22px;padding:44px;text-align:center}
+  .band h2{margin-bottom:14px}
+  .band p{color:var(--dim);max-width:700px;margin:0 auto 10px}
+  .stats{display:flex;gap:26px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+  .stat{background:rgba(0,0,0,.25);border:1px solid var(--line);border-radius:14px;padding:14px 24px;min-width:150px}
+  .stat b{display:block;font-size:24px}
+  .stat span{font-size:13px;color:var(--dim)}
+  footer{border-top:1px solid var(--line);padding:44px 0 60px;color:var(--dim);font-size:14px}
+  .frow{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
+  .flinks{display:flex;gap:20px;flex-wrap:wrap}
+  .credit{margin-top:30px;padding-top:26px;border-top:1px dashed var(--line);font-size:13.5px;color:var(--dim)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <img src="icono-coso.png" alt="Coso">
+    <span class="name">Coso</span>
+    <span class="spacer"></span>
+    <a class="link" href="#funciones">Funciones</a>
+    <a class="link" href="#pills">Píldoras</a>
+    <a class="link" href="privacidad.html">Privacidad</a>
+    <a class="link" href="https://github.com/marlonayaladev/coso-site">GitHub</a>
+    <a class="btn primary sm" href="https://github.com/marlonayaladev/coso-site/releases/latest">Descargar</a>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="hero">
+    <img class="logo" src="icono-coso.png" alt="Icono de Coso">
+    <div class="badge">Windows 10 / 11 · Gratis · Sin cuentas · Sin telemetría</div>
+    <h1>La isla que <span class="grad">le falta a Windows</span></h1>
+    <p class="sub">Tu música, tu agenda, tus recordatorios, tu correo y tus herramientas — flotando sobre tu escritorio, con un compañero que vive ahí. No es una barra que decora: es tu centro de mando.</p>
+    <div class="cta">
+      <a class="btn primary" href="https://github.com/marlonayaladev/coso-site/releases/latest">⬇ Descargar para Windows</a>
+    </div>
+    <div class="micro">Instalador .exe y .msi · 100% local · Tus claves nunca salen de tu PC</div>
+  </div>
+</div>
+
+<section id="funciones">
+  <div class="wrap">
+    <h2>Todo tu día, a un clic</h2>
+    <p class="lead">Coso reúne en una sola isla lo que hoy te obliga a abrir diez ventanas. Y no se queda en lectura: controla, avisa y responde.</p>
+    <div class="grid">
+      <div class="card"><span class="ico">🎵</span><h3>Spotify de verdad</h3><p>Control completo de tu reproductor sin cambiar de ventana: cola de reproducción, siguiente, anterior, pausa. Tu música va con la isla, no al revés.</p></div>
+      <div class="card"><span class="ico">📅</span><h3>Agenda de Google Calendar</h3><p>Tus próximos eventos en la tarjeta, cuenta atrás en vivo y un aviso 10 minutos antes de que empiece. Conectar con Google es un solo botón.</p></div>
+      <div class="card"><span class="ico">⏰</span><h3>Recordatorios que llegan</h3><p>Crea recordatorios desde la isla y recíbelos con notificación cuando toque — con etiquetas especiales para lo que no puede fallar, como el gimnasio.</p></div>
+      <div class="card"><span class="ico">✉️</span><h3>Gmail y correo</h3><p>Tu bandeja de entrada como píldora: avisos de lo importante sin abrir el navegador.</p></div>
+      <div class="card"><span class="ico">💬</span><h3>Chat con IA + voz</h3><p>Conversa con la IA desde la isla y dicta sin manos: entrada de voz 100% offline que arranca con un atajo y envía sola al soltar.</p></div>
+      <div class="card"><span class="ico">🤖</span><h3>Tus agentes de código</h3><p>Sesiones de Claude Code y OpenCode aparecen en la isla con sus pilas propias: qué está haciendo, en vivo, mientras sigues con otra cosa.</p></div>
+      <div class="card"><span class="ico">🐙</span><h3>Integraciones de trabajo</h3><p>GitHub, Vercel, n8n, Notion, Cal.com, Stripe y Resend: cada uno con su píldora de color y sus datos al día.</p></div>
+      <div class="card"><span class="ico">📎</span><h3>Arrastra y suelta</h3><p>Suelta un archivo sobre la isla y deja que Coso lo tome. Sin exploradores de archivos ni pasos de más.</p></div>
+      <div class="card"><span class="ico">⌨️</span><h3>Atajos de teclado</h3><p>Global, configurable y con detección de conflictos: abre, salta y cambia de píldora sin soltar el teclado.</p></div>
+      <div class="card"><span class="ico">🎭</span><h3>Un compañero con carácter</h3><p>Tu personaje te recibe al arrancar, sigue el cursor, reacciona a tus clics y celebra cuando algo termina. La isla no está viva… pero se lo parece.</p></div>
+      <div class="card"><span class="ico">🧩</span><h3>Píldoras a tu medida</h3><p>Elige qué aparece junto a Coso en modo normal; en modo desarrollador, abre todo el catálogo. Cuatro píldoras visibles, ordenadas como tú quieras.</p></div>
+      <div class="card"><span class="ico">🔒</span><h3>Privado por diseño</h3><p>Cero servidores, cero telemetría, cero cuentas. Las claves viven en el Administrador de credenciales de Windows y tus datos en tu PC. Nada sale de ahí.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="pills">
+  <div class="wrap">
+    <h2>Una isla, todas tus pilas</h2>
+    <p class="lead">El catálogo completo, hoy. Y crece: cada integración nueva se suma a la misma fila.</p>
+    <div class="pills">
+      <span class="pill"><span class="dot" style="background:#1db954"></span>Spotify</span>
+      <span class="pill"><span class="dot" style="background:#ff0033"></span>YouTube Music</span>
+      <span class="pill"><span class="dot" style="background:#ea4335"></span>Gmail</span>
+      <span class="pill"><span class="dot" style="background:#4285f4"></span>Google Calendar</span>
+      <span class="pill"><span class="dot" style="background:#f5f6f8"></span>VS Code / Claude</span>
+      <span class="pill"><span class="dot" style="background:#f4505e"></span>GitHub</span>
+      <span class="pill"><span class="dot" style="background:#7c5cff"></span>Vercel</span>
+      <span class="pill"><span class="dot" style="background:#f29b38"></span>n8n</span>
+      <span class="pill"><span class="dot" style="background:#8c8c8c"></span>Notion</span>
+      <span class="pill"><span class="dot" style="background:#c9956a"></span>Cal.com</span>
+      <span class="pill"><span class="dot" style="background:#0570de"></span>Stripe</span>
+      <span class="pill"><span class="dot" style="background:#22c55e"></span>Resend</span>
+      <span class="pill"><span class="dot" style="background:#8f6bff"></span>OpenCode</span>
+      <span class="pill"><span class="dot" style="background:#98a3b5"></span>Voz offline</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split">
+    <div>
+      <h2 style="text-align:left">Hecho para el día a día real</h2>
+      <p class="lead" style="text-align:left;margin:14px 0 0">Las islas bonitas solo existen en vídeos. Esta hace cosas: reproduce, salta de tema, te cuenta qué hora es tu reunión, te recuerda el gimnasio y te deja hablarle sin teclado.</p>
+      <div class="stats">
+        <div class="stat"><b>2 clics</b><span>de la música a la agenda</span></div>
+        <div class="stat"><b>0</b><span>servidores tuyos en medio</span></div>
+        <div class="stat"><b>14+</b><span>píldoras disponibles</span></div>
+        <div class="stat"><b>1</b><span>instalador, listo</span></div>
+      </div>
+    </div>
+    <div class="panel">
+      <h3>Así se siente</h3>
+      <div class="row"><span class="check">✓</span><span><b>Sube el volumen</b> y cambia de canción sin salir de lo que haces.</span></div>
+      <div class="row"><span class="check">✓</span><span><b>«¿Qué tengo mañana?»</b> — la respuesta ya está en la tarjeta, con su cuenta atrás.</span></div>
+      <div class="row"><span class="check">✓</span><span><b>10 minutos antes</b> de tu evento, la isla te avisa. Sin abrir nada.</span></div>
+      <div class="row"><span class="check">✓</span><span><b>Termina tu agente</b> y la píldora te lo suelta en la cara (con carita contenta).</span></div>
+      <div class="row"><span class="check">✓</span><span><b>Dicta un mensaje</b> con un atajo, offline, y se envía solo.</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="band">
+      <h2>Tus datos no son el producto</h2>
+      <p>Coso no tiene cuenta, ni nube, ni rastreadores. Las claves de todos tus servicios se guardan en el Administrador de credenciales de Windows —el mismo que usa el sistema— y la app solo habla con los servicios que tú conectas.</p>
+      <p>Si mañana desconectas todo, Coso sigue siendo tuya y sigue funcionando en local.</p>
+      <div class="cta" style="margin-top:26px">
+        <a class="btn primary" href="https://github.com/marlonayaladev/coso-site/releases/latest">Descargar Coso</a>
+        <a class="btn ghost" href="privacidad.html">Política de privacidad</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="frow">
+      <div style="display:flex;align-items:center;gap:12px">
+        <img src="icono-coso.png" alt="" style="width:30px;height:30px;border-radius:8px">
+        <span><b style="color:var(--txt)">Coso</b> · para Windows 10/11</span>
+      </div>
+      <div class="flinks">
+        <a href="https://github.com/marlonayaladev/coso-site/releases">Descargas</a>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="condiciones.html">Términos</a>
+        <a href="mailto:iammarlonayala@gmail.com">Contacto</a>
+      </div>
+    </div>
+    <div class="credit">
+      Coso nace de meses de desarrollo: la base del producto se construyó durante meses por personas de distintos países, junto al equipo de <b style="color:var(--txt)">Codificado</b>, la startup que impulsa este proyecto. © 2026 Codificado.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
