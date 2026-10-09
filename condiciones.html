@@ -4,28 +4,53 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Condiciones del servicio — Coso</title>
-<meta name="theme-color" content="#0b0e14">
+<meta name="theme-color" content="#0a0a13">
 <link rel="icon" href="icono-coso.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
-  :root{--bg:#0b0e14;--card:#141a24;--line:#222b3a;--txt:#e8ecf3;--dim:#98a3b5;--accent:#6aa8ff}
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
-  .wrap{max-width:760px;margin:0 auto;padding:56px 24px 80px}
-  a{color:var(--accent)}
-  .back{display:inline-flex;align-items:center;gap:8px;font-size:14.5px;margin-bottom:34px;text-decoration:none}
-  h1{font-size:clamp(28px,4vw,38px);letter-spacing:-.8px;margin-bottom:6px}
-  .meta{color:var(--dim);font-size:14px;margin-bottom:34px}
-  h2{font-size:20px;margin:34px 0 10px}
-  p,li{color:#c6cdda;font-size:16px}
-  ul{padding-left:22px;margin:8px 0}
-  li{margin:6px 0}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px 28px;margin-top:8px}
-  footer{color:var(--dim);font-size:14px;margin-top:44px;padding-top:24px;border-top:1px solid var(--line)}
+:root{
+  --color-carbon-vellum:#fcfcfc;--color-obsidian:#0a0a13;--color-void:#040407;
+  --color-graphite:#08080c;--color-smoke:#757580;--color-ash:#a3a3b3;
+  --color-charcoal:#2a2a32;--color-iris-glow:#6199f6;--color-twilight:#4f4f80;
+  --font-framegothic:'Inter',ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  --font-neuemachinainktrap:'Space Mono',ui-monospace,Menlo,monospace;
+  --radius-lg:10px;--radius-full:100px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  background:var(--color-obsidian);color:var(--color-carbon-vellum);
+  font-family:var(--font-framegothic);font-size:16px;line-height:1.55;letter-spacing:.16px;
+  -webkit-font-smoothing:antialiased;
+}
+body::before{
+  content:"";position:fixed;inset:0;z-index:-1;
+  background:
+    radial-gradient(1000px 600px at 85% -10%, rgba(40,40,110,.32) 0%, transparent 60%),
+    radial-gradient(900px 700px at 5% 20%, rgba(20,24,60,.5) 0%, transparent 60%);
+}
+a{color:var(--color-iris-glow);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:760px;margin:0 auto;padding:56px 24px 80px}
+.eyebrow{font-family:var(--font-neuemachinainktrap);font-size:12px;text-transform:uppercase;letter-spacing:.06em;line-height:.9;color:var(--color-iris-glow);display:block;margin-bottom:10px}
+.back{display:inline-flex;align-items:center;gap:8px;font-size:14px;color:var(--color-ash);margin-bottom:36px}
+.back:hover{color:var(--color-carbon-vellum);text-decoration:none}
+h1{font-size:clamp(30px,4.6vw,48px);line-height:1.02;letter-spacing:-.04em;font-weight:400;margin-bottom:10px}
+.meta{color:var(--color-smoke);font-size:13px;margin-bottom:36px}
+h2{font-size:18px;font-weight:500;line-height:1.3;margin:30px 0 8px}
+p,li{color:var(--color-ash);font-size:15px}
+ul{padding-left:20px;margin:8px 0}
+li{margin:8px 0}
+b{color:var(--color-carbon-vellum);font-weight:500}
+.card{background:var(--color-graphite);border:1px solid var(--color-twilight);border-radius:var(--radius-lg);padding:32px;margin-top:8px;box-shadow:inset 0 0 0 1px rgba(24,24,38,.9)}
+footer{color:var(--color-smoke);font-size:13.5px;margin-top:44px;padding-top:24px;border-top:1px solid var(--color-charcoal)}
 </style>
 </head>
 <body>
 <div class="wrap">
   <a class="back" href="index.html">← Volver a Coso</a>
+  <span class="eyebrow">Legal</span>
   <h1>Condiciones del servicio de Coso</h1>
   <div class="meta">Última actualización: 7 de octubre de 2026</div>
 
