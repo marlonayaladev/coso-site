@@ -23,7 +23,7 @@ Your music, calendar, reminders, inbox and coding agents, in an island that live
 
 <br /><br />
 
-![Version](https://img.shields.io/badge/version-0.1.18-0A84FF?style=flat-square)
+![Version](https://img.shields.io/badge/version-0.1.20-0A84FF?style=flat-square)
 ![Windows 10/11](https://img.shields.io/badge/Windows-10%20%2F%2011-0078D4?logo=windows&logoColor=white&style=flat-square)
 ![Tauri 2](https://img.shields.io/badge/Tauri-2-FFC131?logo=tauri&logoColor=black&style=flat-square)
 ![Rust](https://img.shields.io/badge/Rust-1.x-000000?logo=rust&logoColor=white&style=flat-square)
@@ -33,7 +33,7 @@ Your music, calendar, reminders, inbox and coding agents, in an island that live
 <br />
 
 <a href="https://github.com/marlonayaladev/coso/releases/latest">
-  <img src="assets/readme/hero-en.jpg" width="100%" alt="Coso at the top edge of Windows, showing a Claude Code session, Spotify and four integrations." />
+  <img src="assets/readme/hero-en.jpg" width="100%" alt="Coso at the top edge of Windows with the Google Calendar agenda and the Spotify player; below, «Your day, on an island.»" />
 </a>
 
 </div>
@@ -107,7 +107,7 @@ Pomodoro and Animedoro with breaks, cycles and a strict mode. During focus, Coso
 Midnight, Sakura, Ocean, Forest, Sunset, Graphite or White. Or pick your own color. Change the theme, the outfit, the monitor Coso lives on and even its shortcuts.
 
 <p align="center">
-  <img src="assets/readme/themes.jpg" width="900" alt="Coso theme picker with color palettes, a custom color and Mochi wearing a witch hat." />
+  <img src="assets/readme/themes.jpg" width="900" alt="Coso theme picker with color palettes, a custom color and Mochi." />
 </p>
 
 ### Your tools, under control
@@ -217,6 +217,8 @@ Windows releases are published as `v*` tags. Full notes in [Releases](https://gi
 
 | Version | Date | Highlights |
 |---|---|---|
+| [0.1.20](https://github.com/marlonayaladev/coso/releases/tag/v0.1.20) | Nov 8, 2026 | Six-step welcome tour, player with seek and volume, signed installer |
+| [0.1.19](https://github.com/marlonayaladev/coso/releases/tag/v0.1.19) | Oct 27, 2026 | WhatsApp, OCR screenshots, Pomodoro timer and the Coso brand rollout |
 | [0.1.18](https://github.com/marlonayaladev/coso/releases/tag/v0.1.18) | Oct 14, 2026 | `latest.json` without a BOM so the updater can read it |
 | [0.1.17](https://github.com/marlonayaladev/coso/releases/tag/v0.1.17) | Oct 14, 2026 | Gmail card with compose and send |
 | [0.1.16](https://github.com/marlonayaladev/coso/releases/tag/v0.1.16) | Oct 13, 2026 | Automatic OpenCode download with retries |

@@ -23,7 +23,7 @@ Música, agenda, recordatorios, correo y agentes de código en una isla que vive
 
 <br /><br />
 
-![Versión](https://img.shields.io/badge/versi%C3%B3n-0.1.18-0A84FF?style=flat-square)
+![Versión](https://img.shields.io/badge/versi%C3%B3n-0.1.20-0A84FF?style=flat-square)
 ![Windows 10/11](https://img.shields.io/badge/Windows-10%20%2F%2011-0078D4?logo=windows&logoColor=white&style=flat-square)
 ![Tauri 2](https://img.shields.io/badge/Tauri-2-FFC131?logo=tauri&logoColor=black&style=flat-square)
 ![Rust](https://img.shields.io/badge/Rust-1.x-000000?logo=rust&logoColor=white&style=flat-square)
@@ -33,7 +33,7 @@ Música, agenda, recordatorios, correo y agentes de código en una isla que vive
 <br />
 
 <a href="https://github.com/marlonayaladev/coso/releases/latest">
-  <img src="assets/readme/hero.jpg" width="100%" alt="Coso en el borde superior de Windows, con una sesión de Claude Code, el reproductor de Spotify y cuatro integraciones." />
+  <img src="assets/readme/hero.jpg" width="100%" alt="Coso en el borde superior de Windows con la agenda de Google Calendar y el reproductor de Spotify; debajo, «Tu día, en una isla.»" />
 </a>
 
 </div>
@@ -107,7 +107,7 @@ Pomodoro y Animedoro con descansos, ciclos y modo estricto. Durante el foco, Cos
 Medianoche, Sakura, Océano, Bosque, Atardecer, Grafito o Blanco. O elige tu propio color. Cambia el tema, el disfraz, la pantalla donde vive Coso y hasta sus atajos.
 
 <p align="center">
-  <img src="assets/readme/themes.jpg" width="900" alt="Vista de temas de Coso con paletas, color personalizado y Mochi con gorro de bruja." />
+  <img src="assets/readme/themes.jpg" width="900" alt="Vista de temas de Coso con paletas, color personalizado y Mochi." />
 </p>
 
 ### Tus herramientas, bajo control
@@ -217,6 +217,8 @@ Las versiones de Windows se publican como tags `v*`. Notas completas en [Release
 
 | Versión | Fecha | Novedades |
 |---|---|---|
+| [0.1.20](https://github.com/marlonayaladev/coso/releases/tag/v0.1.20) | 8 nov 2026 | Guía de bienvenida de 6 pasos, reproductor con seek y volumen, instalador firmado |
+| [0.1.19](https://github.com/marlonayaladev/coso/releases/tag/v0.1.19) | 27 oct 2026 | WhatsApp, capturas con OCR, temporizador Pomodoro y marca unificada a Coso |
 | [0.1.18](https://github.com/marlonayaladev/coso/releases/tag/v0.1.18) | 14 oct 2026 | `latest.json` sin BOM para que el actualizador lo lea |
 | [0.1.17](https://github.com/marlonayaladev/coso/releases/tag/v0.1.17) | 14 oct 2026 | Tarjeta de Gmail con redacción y envío |
 | [0.1.16](https://github.com/marlonayaladev/coso/releases/tag/v0.1.16) | 13 oct 2026 | Descarga automática de OpenCode con reintentos |
