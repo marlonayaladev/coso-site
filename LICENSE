@@ -1,0 +1,135 @@
+Coso — Licencia de Software Propietario
+Propietario: Codificado
+Copyright (c) 2026 Codificado. Todos los derechos reservados.
+
+===============================================================================
+ ESPAÑOL
+===============================================================================
+
+1. PROPIEDAD
+   Coso (en adelante, «la Aplicación»), incluyendo su código fuente, su
+   diseño, sus textos, sus elementos visuales y su marca, es propiedad
+   exclusiva de Codificado (en adelante, «la Empresa»). Los componentes de
+   terceros que se distribuyen con la Aplicación conservan su propia
+   licencia, indicada en sus archivos correspondientes.
+
+2. USO
+   La Aplicación se distribuye de forma gratuita para uso personal y no
+   comercial. Puedes instalarla, usarla y conservar una copia del
+   instalador. Esta licencia no te transmite ninguna titularidad de
+   propiedad intelectual sobre la Aplicación.
+
+3. RESTRICCIONES
+   Salvo autorización previa por escrito de la Empresa, no está permitido:
+   a) copiar, modificar, traducir, descompilar, desensamblar o realizar
+      ingeniería inversa de la Aplicación o de su código fuente;
+   b) distribuir, alquilar, arrendar, vender, sublicenciar o poner la
+      Aplicación a disposición del público de cualquier otra forma;
+   c) eliminar o alterar avisos de propiedad, marcas, nombres comerciales
+      o menciones de autoría;
+   d) usar la Aplicación para prestar a terceros un servicio comercial;
+   e) usar el nombre «Coso», la marca, el logotipo o los elementos
+      visuales de la Aplicación o de la Empresa sin autorización expresa.
+
+4. CÓDIGO FUENTE
+   El código fuente de Coso no se publica en la actualidad. Si en el
+   futuro se publica, se hará bajo los términos que la Empresa determine,
+   los cuales sustituirán a los de este documento.
+
+5. CONTRIBUCIONES
+   Cualquier contribución, idea, sugerencia, parche o material que envíes
+   a la Empresa pasa a ser propiedad de Codificado, que podrá usarlo,
+   modificarlo y publicarlo sin atribución ni compensación. No envíes
+   material que no tengas derecho a ceder.
+
+6. PROPIEDAD INTELECTUAL DE TERCEROS
+   Coso integra y se conecta con componentes y servicios de terceros
+   (entre ellos Tauri, Rust, Google, Spotify, WhatsApp, Anthropic y
+   OpenCode). Esos componentes se distribuyen o se utilizan bajo sus
+   propias licencias y condiciones, y este documento no las modifica.
+
+7. TERMINACIÓN
+   Esta licencia es efectiva mientras cumplas sus condiciones. Si las
+   incumples, los derechos aquí otorgados terminan automáticamente y
+   deberás dejar de usar la Aplicación y de conservar copias de ella.
+
+8. EXENCIÓN DE GARANTÍA Y DE RESPONSABILIDAD
+   La Aplicación se entrega «tal cual», sin garantía de ningún tipo,
+   expresa o implícita, incluidas las garantías de comercialización,
+   idoneidad para un fin concreto y no infracción. En ningún caso
+   Codificado será responsable de daños directos, indirectos,
+   incidentales o consecuentes derivados del uso o de la imposibilidad
+   de uso de la Aplicación.
+
+9. LEGISLACIÓN
+   Este documento se rige por la legislación aplicable en el domicilio
+   de Codificado, sin perjuicio de las normas imperativas de protección
+   al consumidor que resulten de aplicación.
+
+===============================================================================
+ ENGLISH
+===============================================================================
+
+1. OWNERSHIP
+   Coso (the "Application"), including its source code, design, texts,
+   visual elements and brand, is the exclusive property of Codificado
+   (the "Company"). Third-party components distributed with the
+   Application keep their own license, stated in their own files.
+
+2. USE
+   The Application is distributed free of charge for personal,
+   non-commercial use. You may install it, use it and keep a copy of the
+   installer. This license transfers no intellectual property ownership
+   to you.
+
+3. RESTRICTIONS
+   Unless you have prior written permission from the Company, you may
+   not:
+   a) copy, modify, translate, decompile, disassemble or reverse
+      engineer the Application or its source code;
+   b) distribute, rent, lease, sell, sublicense or otherwise make the
+      Application available to the public;
+   c) remove or alter proprietary notices, trademarks, trade names or
+      attribution;
+   d) use the Application to provide a commercial service to third
+      parties;
+   e) use the name "Coso", its brand, logo or the visual elements of
+      the Application or the Company without explicit authorization.
+
+4. SOURCE CODE
+   Coso's source code is not public at this time. If it is ever
+   published, it will be under the terms the Company determines, which
+   will replace those of this document.
+
+5. CONTRIBUTIONS
+   Any contribution, idea, suggestion, patch or material you send to
+   the Company becomes the property of Codificado, which may use,
+   modify and publish it without attribution or compensation. Do not
+   send material you are not entitled to transfer.
+
+6. THIRD-PARTY INTELLECTUAL PROPERTY
+   Coso integrates with and connects to third-party components and
+   services (including Tauri, Rust, Google, Spotify, WhatsApp,
+   Anthropic and OpenCode). Those components are distributed or used
+   under their own licenses and terms, and this document does not
+   modify them.
+
+7. TERMINATION
+   This license is effective as long as you comply with its terms. If
+   you breach them, the rights granted here terminate automatically and
+   you must stop using the Application and stop keeping copies of it.
+
+8. DISCLAIMER OF WARRANTY AND LIABILITY
+   The Application is provided "as is", without warranty of any kind,
+   express or implied, including the warranties of merchantability,
+   fitness for a particular purpose and non-infringement. In no event
+   shall Codificado be liable for any direct, indirect, incidental or
+   consequential damages arising from the use of or inability to use
+   the Application.
+
+9. GOVERNING LAW
+   This document is governed by the law applicable at Codificado's
+   registered address, without prejudice to mandatory consumer
+   protection rules that may apply.
+
+Contacto / Contact: iammarlonayala@gmail.com

@@ -14,7 +14,7 @@ Your music, calendar, reminders, inbox and coding agents, in an island that live
 
 <br />
 
-<a href="https://github.com/marlonayaladev/coso/releases/latest">
+<a href="https://github.com/marlonayaladev/coso-site/releases/download/v0.1.20/Coso_0.1.20_x64-setup.exe">
   <img src="https://img.shields.io/badge/Download_for_Windows-0A84FF?style=for-the-badge&logo=windows&logoColor=white" alt="Download for Windows" />
 </a>
 <a href="#screenshots">
@@ -32,7 +32,7 @@ Your music, calendar, reminders, inbox and coding agents, in an island that live
 
 <br />
 
-<a href="https://github.com/marlonayaladev/coso/releases/latest">
+<a href="https://github.com/marlonayaladev/coso-site/releases/download/v0.1.20/Coso_0.1.20_x64-setup.exe">
   <img src="assets/readme/hero-en.jpg" width="100%" alt="Coso at the top edge of Windows with the Google Calendar agenda and the Spotify player; below, «Your day, on an island.»" />
 </a>
 
@@ -133,7 +133,7 @@ Choose up to four pills to sit next to Coso. Connect Google from its cards, keep
 
 ## Install
 
-Download the latest installer from **[Releases](https://github.com/marlonayaladev/coso/releases/latest)**. It installs per user: **no administrator rights required**.
+Download the latest installer: **[Coso_0.1.20_x64-setup.exe](https://github.com/marlonayaladev/coso-site/releases/download/v0.1.20/Coso_0.1.20_x64-setup.exe)**. It installs per user: **no administrator rights required**.
 
 1. Run the `.exe` installer.
 2. If Windows shows **“Windows protected your PC”**, click **More info** and then **Run anyway**. This is expected: the app does not have a paid code-signing certificate yet.
@@ -142,6 +142,8 @@ Download the latest installer from **[Releases](https://github.com/marlonayalade
 > **Can't see it?** Check the system tray. From there you can open Coso, pause it or go to Settings.
 
 ## Build from source
+
+> **The repository is private.** Coso is proprietary software owned by Codificado and the source code is not public yet. If you want to contribute or audit it, write to [iammarlonayala@gmail.com](mailto:iammarlonayala@gmail.com) and I'll grant you access.
 
 Requirements:
 
@@ -213,20 +215,20 @@ All of them can be changed in **Settings › Keyboard shortcuts**. Coso detects 
 
 ## Releases
 
-Windows releases are published as `v*` tags. Full notes in [Releases](https://github.com/marlonayaladev/coso/releases).
+Windows releases are published as `v*` tags. Full notes in [Releases](https://github.com/marlonayaladev/coso-site/releases).
 
 | Version | Date | Highlights |
 |---|---|---|
-| [0.1.20](https://github.com/marlonayaladev/coso/releases/tag/v0.1.20) | Nov 8, 2026 | Six-step welcome tour, player with seek and volume, signed installer |
-| [0.1.19](https://github.com/marlonayaladev/coso/releases/tag/v0.1.19) | Oct 27, 2026 | WhatsApp, OCR screenshots, Pomodoro timer and the Coso brand rollout |
-| [0.1.18](https://github.com/marlonayaladev/coso/releases/tag/v0.1.18) | Oct 14, 2026 | `latest.json` without a BOM so the updater can read it |
-| [0.1.17](https://github.com/marlonayaladev/coso/releases/tag/v0.1.17) | Oct 14, 2026 | Gmail card with compose and send |
-| [0.1.16](https://github.com/marlonayaladev/coso/releases/tag/v0.1.16) | Oct 13, 2026 | Automatic OpenCode download with retries |
-| [0.1.13](https://github.com/marlonayaladev/coso/releases/tag/v0.1.13) | Oct 9, 2026 | Google Drive, official icons and self-installing OpenCode |
-| [0.1.12](https://github.com/marlonayaladev/coso/releases/tag/v0.1.12) | Oct 8, 2026 | Events from chat, “Your order” screen and a quieter island |
-| [0.1.11](https://github.com/marlonayaladev/coso/releases/tag/v0.1.11) | Oct 7, 2026 | Spotify queue with cover art, player and equalizer |
-| [0.1.10](https://github.com/marlonayaladev/coso/releases/tag/v0.1.10) | Oct 6, 2026 | Faithful attachments, turns up to 300 s and a real upload bar |
-| [0.1.9](https://github.com/marlonayaladev/coso/releases/tag/v0.1.9) | Oct 5, 2026 | One-click file upload and isolated OpenCode |
+| [0.1.20](https://github.com/marlonayaladev/coso-site/releases/tag/v0.1.20) | Nov 8, 2026 | Six-step welcome tour, player with seek and volume, signed installer |
+| [0.1.19](https://github.com/marlonayaladev/coso-site/releases/tag/v0.1.19) | Oct 27, 2026 | WhatsApp, OCR screenshots, Pomodoro timer and the Coso brand rollout |
+| [0.1.18](https://github.com/marlonayaladev/coso-site/releases/tag/v0.1.18) | Oct 14, 2026 | `latest.json` without a BOM so the updater can read it |
+| [0.1.17](https://github.com/marlonayaladev/coso-site/releases/tag/v0.1.17) | Oct 14, 2026 | Gmail card with compose and send |
+| [0.1.16](https://github.com/marlonayaladev/coso-site/releases/tag/v0.1.16) | Oct 13, 2026 | Automatic OpenCode download with retries |
+| [0.1.13](https://github.com/marlonayaladev/coso-site/releases/tag/v0.1.13) | Oct 9, 2026 | Google Drive, official icons and self-installing OpenCode |
+| [0.1.12](https://github.com/marlonayaladev/coso-site/releases/tag/v0.1.12) | Oct 8, 2026 | Events from chat, “Your order” screen and a quieter island |
+| [0.1.11](https://github.com/marlonayaladev/coso-site/releases/tag/v0.1.11) | Oct 7, 2026 | Spotify queue with cover art, player and equalizer |
+| [0.1.10](https://github.com/marlonayaladev/coso-site/releases/tag/v0.1.10) | Oct 6, 2026 | Faithful attachments, turns up to 300 s and a real upload bar |
+| [0.1.9](https://github.com/marlonayaladev/coso-site/releases/tag/v0.1.9) | Oct 5, 2026 | One-click file upload and isolated OpenCode |
 
 ## FAQ
 
@@ -260,12 +262,12 @@ Made by **Codificado**.
 
 ## License
 
-**All rights reserved.** Any copying is subject to criminal prosecution.
+**All rights reserved.** Coso is proprietary software owned by **Codificado**: free for personal use, but copying, modifying or distributing it is not allowed. Full terms in [LICENSE](LICENSE).
 
 <div align="center">
 
 **⭐ If Coso helps you organize your day, leave it a star.**
 
-[Website](https://marlonayaladev.github.io/coso-site/) · [Privacy](https://marlonayaladev.github.io/coso-site/privacidad.html) · [Terms](https://marlonayaladev.github.io/coso-site/condiciones.html) · [Releases](https://github.com/marlonayaladev/coso/releases)
+[Website](https://marlonayaladev.github.io/coso-site/) · [Privacy](https://marlonayaladev.github.io/coso-site/privacidad.html) · [Terms](https://marlonayaladev.github.io/coso-site/condiciones.html) · [Releases](https://github.com/marlonayaladev/coso-site/releases)
 
 </div>
